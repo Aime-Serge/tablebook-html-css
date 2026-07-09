@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Create Restaurant | TableBook</title>
+  <link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header"><div class="container site-header__inner"><a class="brand" href="index.html"><span class="brand__mark">TB</span><span class="brand__name">TableBook</span></a><button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="main-navigation">Menu</button><nav class="nav" id="main-navigation" data-main-nav><a class="nav__link" href="index.html">Find a Table</a><a class="nav__link" href="dashboard.html">Restaurant Dashboard</a><a class="button button--secondary" href="login.html">Sign In</a></nav></div></header>
+  <main class="section"><div class="container container--form"><div class="section__header"><h1>Add Your Restaurant</h1><p>Owner form prepared for future secure persistence.</p></div>
+    <form class="form-panel form-grid" method="post" action="#" data-auth-form>
+      <div class="field"><label for="restaurant-name">Restaurant name *</label><input id="restaurant-name" name="name" type="text" placeholder="The Golden Fork" required></div>
+      <div class="field"><label for="restaurant-description">Description</label><textarea id="restaurant-description" name="description" placeholder="Describe cuisine style, atmosphere, and signature dishes"></textarea></div>
+      <div class="form-grid form-grid--2"><div class="field"><label for="restaurant-cuisine">Cuisine type *</label><select id="restaurant-cuisine" name="cuisine" required><option value="">Select cuisine</option><option>Italian</option><option>Japanese</option><option>French</option><option>Indian</option><option>Mediterranean</option></select></div><div class="field"><label for="restaurant-price">Price range *</label><select id="restaurant-price" name="price_range" required><option value="1">$ - Budget friendly</option><option value="2">$$ - Moderate</option><option value="3">$$$ - Upscale</option><option value="4">$$$$ - Fine dining</option></select></div></div>
+      <div class="field"><label for="restaurant-address">Street address *</label><input id="restaurant-address" name="address" type="text" required></div>
+      <div class="field"><label for="restaurant-city">City *</label><input id="restaurant-city" name="city" type="text" required></div>
+      <div class="form-grid form-grid--2"><div class="field"><label for="restaurant-phone">Phone</label><input id="restaurant-phone" name="phone" type="tel"></div><div class="field"><label for="restaurant-email">Contact email</label><input id="restaurant-email" name="email" type="email"></div></div>
+      <button class="button" type="submit">Create Restaurant</button><p data-form-message class="helper"></p>
+    </form>
+  </div></main>
+  <footer class="site-footer"><div class="container site-footer__inner"><a class="brand" href="index.html"><span class="brand__mark">TB</span><span class="brand__name">TableBook</span></a><p>&copy; 2026 TableBook.</p></div></footer><script type="module" src="js/app.js"></script>
+</body>
+</html>

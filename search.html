@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Restaurants | TableBook</title>
+  <link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header"><div class="container site-header__inner"><a class="brand" href="index.html"><span class="brand__mark">TB</span><span class="brand__name">TableBook</span></a><button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="main-navigation">Menu</button><nav class="nav" id="main-navigation" data-main-nav><a class="nav__link" href="index.html">Find a Table</a><a class="nav__link" href="reservations.html">My Reservations</a><a class="nav__link" href="dashboard.html">Restaurant Dashboard</a><a class="button button--secondary" href="login.html">Sign In</a><a class="button" href="sign-up.html">Sign Up</a></nav></div></header>
+  <main>
+    <section class="compact-search">
+      <div class="container">
+        <form action="search.html" method="get" data-search-form>
+          <div class="search-panel__grid">
+            <div class="field"><label for="search-location">Location</label><input id="search-location" name="location" type="text" placeholder="City or area"></div>
+            <div class="field"><label for="search-date">Date</label><input id="search-date" name="date" type="date"></div>
+            <div class="field"><label for="search-time">Time</label><select id="search-time" name="time"><option>19:00</option><option>19:30</option><option>20:00</option></select></div>
+            <div class="field"><label for="search-party">Party</label><select id="search-party" name="party_size"><option value="2">2 guests</option><option value="4">4 guests</option><option value="6">6 guests</option></select></div>
+          </div>
+          <button class="button" type="submit">Update Search</button>
+        </form>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container sidebar-layout">
+        <aside class="card filter-panel">
+          <h2>Filters</h2>
+          <form class="stack" method="get" action="search.html" data-filter-form>
+            <div class="field"><label for="filter-cuisine">Cuisine</label><select id="filter-cuisine" name="cuisine"><option value="">Any cuisine</option><option>Italian</option><option>Indian</option><option>French</option><option>Mediterranean</option></select></div>
+            <fieldset class="stack"><legend class="label">Price range</legend><label class="checkbox-row"><input type="checkbox" name="price" value="2"> $$ Moderate</label><label class="checkbox-row"><input type="checkbox" name="price" value="3"> $$$ Upscale</label><label class="checkbox-row"><input type="checkbox" name="price" value="4"> $$$$ Fine dining</label></fieldset>
+            <button class="button button--secondary" type="submit">Apply Filters</button><p data-form-message class="helper"></p>
+          </form>
+        </aside>
+        <div>
+          <div class="cluster" aria-label="Active filters"><span class="helper">Active filters:</span><span class="badge">Kigali</span><span class="badge">Dinner</span><a class="button button--ghost" href="search.html">Clear all</a></div>
+          <div class="cluster results-toolbar"><p>3 restaurants found</p><div class="field sort-field"><label for="sort">Sort by</label><select id="sort" name="sort"><option>Newest First</option><option>Name A-Z</option><option>Top Rated</option></select></div></div>
+          <div class="grid grid--3">
+            <a class="card restaurant-card" href="restaurant-detail.html"><img class="restaurant-card__image" src="assets/images/restaurant-1.jpg" alt="Ember and Basil restaurant"><div class="card__body"><span class="badge">Mediterranean</span><h3>Ember &amp; Basil</h3><p>Kigali · $$$ · 4.8</p><div class="cluster"><span class="badge badge--outline">18:30</span><span class="badge badge--outline">19:00</span><span class="badge badge--outline">20:00</span></div></div></a>
+            <a class="card restaurant-card" href="restaurant-detail.html"><img class="restaurant-card__image" src="assets/images/restaurant-2.jpg" loading="lazy" alt="Saffron Table restaurant"><div class="card__body"><span class="badge">Indian</span><h3>Saffron Table</h3><p>Kigali · $$ · 4.6</p><div class="cluster"><span class="badge badge--outline">18:00</span><span class="badge badge--outline">19:30</span></div></div></a>
+            <a class="card restaurant-card" href="restaurant-detail.html"><img class="restaurant-card__image" src="assets/images/restaurant-3.jpg" loading="lazy" alt="Maison Miel restaurant"><div class="card__body"><span class="badge">French</span><h3>Maison Miel</h3><p>Kigali · $$$$ · 4.9</p><div class="cluster"><span class="badge badge--outline">20:00</span><span class="badge badge--outline">21:00</span></div></div></a>
+          </div>
+          <div class="empty-state mt-8"><h2>No restaurants found</h2><p>This empty state is ready for future filtering when no records match the selected criteria.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container site-footer__inner"><a class="brand" href="index.html"><span class="brand__mark">TB</span><span class="brand__name">TableBook</span></a><p>&copy; 2026 TableBook.</p></div></footer>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

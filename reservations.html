@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>My Reservations | TableBook</title>
+  <link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header"><div class="container site-header__inner"><a class="brand" href="index.html"><span class="brand__mark">TB</span><span class="brand__name">TableBook</span></a><button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="main-navigation">Menu</button><nav class="nav" id="main-navigation" data-main-nav><a class="nav__link" href="index.html">Find a Table</a><a class="nav__link" href="reservations.html" aria-current="page">My Reservations</a><a class="nav__link" href="dashboard.html">Restaurant Dashboard</a><a class="button button--secondary" href="login.html">Sign In</a><a class="button" href="sign-up.html">Sign Up</a></nav></div></header>
+  <main>
+    <section class="page-hero"><div class="container"><h1>My Reservations</h1><p>Review upcoming, past, and cancelled bookings using static sample data.</p><a class="button" href="index.html">New Reservation</a></div></section>
+    <section class="section"><div class="container stack">
+      <div class="tabs" role="tablist" aria-label="Reservation groups"><button class="tab" aria-selected="true" type="button">Upcoming (1)</button><button class="tab" type="button">Past (1)</button><button class="tab" type="button">Cancelled (1)</button></div>
+      <section class="stack" aria-labelledby="upcoming-heading"><h2 id="upcoming-heading">Upcoming</h2><article class="card reservation-card"><div class="reservation-card__top"><div><span class="badge badge--success">Confirmed</span><h3>Ember &amp; Basil</h3><p>Mediterranean · KG 7 Avenue, Kimihurura</p><p>Sunday, July 12, 2026 · 19:00 · Party of 4</p><p class="helper">Confirmation: TB7K92A · Special request: Window table if available</p></div><button class="button button--secondary" type="button">Cancel placeholder</button></div></article></section>
+      <section class="stack" aria-labelledby="past-heading"><h2 id="past-heading">Past</h2><article class="card reservation-card"><span class="badge badge--success">Completed</span><h3>Saffron Table</h3><p>June 20, 2026 · 18:30 · Party of 2</p><p class="helper">Confirmation: TB3M81C</p></article></section>
+      <section class="stack" aria-labelledby="cancelled-heading"><h2 id="cancelled-heading">Cancelled</h2><article class="card reservation-card"><span class="badge badge--danger">Cancelled</span><h3>Maison Miel</h3><p>June 5, 2026 · 20:00 · Party of 3</p><p class="helper">Confirmation: TB1P55D</p></article></section>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container site-footer__inner"><a class="brand" href="index.html"><span class="brand__mark">TB</span><span class="brand__name">TableBook</span></a><p>&copy; 2026 TableBook.</p></div></footer><script type="module" src="js/app.js"></script>
+</body>
+</html>

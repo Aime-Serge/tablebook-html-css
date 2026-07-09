@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TableBook | Find and book the perfect table</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="TableBook home"><span class="brand__mark">TB</span><span class="brand__name">TableBook</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="main-navigation">Menu</button>
+      <nav class="nav" id="main-navigation" data-main-nav aria-label="Main navigation">
+        <a class="nav__link" href="index.html" aria-current="page">Find a Table</a>
+        <a class="nav__link" href="reservations.html">My Reservations</a>
+        <a class="nav__link" href="dashboard.html">Restaurant Dashboard</a>
+        <a class="button button--secondary" href="login.html">Sign In</a>
+        <a class="button" href="sign-up.html">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero__content">
+        <div class="trust-strip">Real-time tables from carefully reviewed restaurants</div>
+        <h1>Find and book the perfect table for any occasion</h1>
+        <p class="hero__copy">Discover warm dining rooms, verified reviews, and easy reservations for dates, family meals, celebrations, and quiet weekday dinners.</p>
+        <form class="search-panel" action="search.html" method="get" data-search-form>
+          <div class="search-panel__grid">
+            <div class="field">
+              <label for="home-location">Location</label>
+              <input id="home-location" name="location" type="text" placeholder="Kigali, Kimihurura, Kicukiro">
+            </div>
+            <div class="field">
+              <label for="home-date">Date</label>
+              <input id="home-date" name="date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="home-time">Time</label>
+              <select id="home-time" name="time" required>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="home-party">Party size</label>
+              <select id="home-party" name="party_size" required>
+                <option value="2">2 guests</option>
+                <option value="4">4 guests</option>
+                <option value="6">6 guests</option>
+                <option value="8">8 guests</option>
+              </select>
+            </div>
+          </div>
+          <button class="button" type="submit">Find a Table</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container grid grid--3">
+        <article class="feature"><span class="feature__icon">1</span><div><h2>Real-time availability</h2><p>Search date, time, and party size before choosing your restaurant.</p></div></article>
+        <article class="feature"><span class="feature__icon">2</span><div><h2>Instant confirmation</h2><p>Keep the booking flow clear and ready for secure backend confirmation.</p></div></article>
+        <article class="feature"><span class="feature__icon">3</span><div><h2>Verified reviews</h2><p>Sample reviews show how future diner feedback will support trust.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__header"><h2>Browse by cuisine</h2><p>Choose the kind of meal you are planning, from relaxed family plates to elegant tasting menus.</p></div>
+        <div class="cluster">
+          <a class="badge badge--outline" href="search.html?cuisine=italian">Italian</a>
+          <a class="badge badge--outline" href="search.html?cuisine=japanese">Japanese</a>
+          <a class="badge badge--outline" href="search.html?cuisine=french">French</a>
+          <a class="badge badge--outline" href="search.html?cuisine=indian">Indian</a>
+          <a class="badge badge--outline" href="search.html?cuisine=mediterranean">Mediterranean</a>
+          <a class="badge badge--outline" href="search.html?cuisine=thai">Thai</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__header"><h2>Featured restaurants</h2><p>Handpicked sample restaurants used to represent the original TableBook experience.</p></div>
+        <div class="grid grid--3">
+          <a class="card restaurant-card" href="restaurant-detail.html"><img class="restaurant-card__image" src="assets/images/restaurant-1.jpg" alt="Warm dining room at Ember and Basil"><div class="card__body"><span class="badge">Mediterranean</span><h3>Ember &amp; Basil</h3><p>Kigali · $$$ · 4.8 stars</p><p>Grilled seafood, garden mezze, and slow-roasted meats.</p></div></a>
+          <a class="card restaurant-card" href="restaurant-detail.html"><img class="restaurant-card__image" src="assets/images/restaurant-2.jpg" loading="lazy" alt="Dining table at Saffron Table"><div class="card__body"><span class="badge">Indian</span><h3>Saffron Table</h3><p>Kigali · $$ · 4.6 stars</p><p>Comforting curries, clay-oven breads, and shared plates.</p></div></a>
+          <a class="card restaurant-card" href="restaurant-detail.html"><img class="restaurant-card__image" src="assets/images/restaurant-3.jpg" loading="lazy" alt="Elegant interior at Maison Miel"><div class="card__body"><span class="badge">French</span><h3>Maison Miel</h3><p>Kigali · $$$$ · 4.9 stars</p><p>Seasonal fine dining with pastry-led desserts.</p></div></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section__header"><h2>Own a restaurant?</h2><p>List your restaurant, receive reservation requests, and prepare for a dashboard-backed booking workflow in the next phase.</p></div>
+        <a class="button" href="sign-up.html">Get Started Free</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container site-footer__inner"><a class="brand" href="index.html"><span class="brand__mark">TB</span><span class="brand__name">TableBook</span></a><p>&copy; 2026 TableBook. Academic HTML/CSS project.</p></div></footer>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

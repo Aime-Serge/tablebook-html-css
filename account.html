@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Account Settings | TableBook</title>
+  <link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header"><div class="container site-header__inner"><a class="brand" href="index.html"><span class="brand__mark">TB</span><span class="brand__name">TableBook</span></a><button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="main-navigation">Menu</button><nav class="nav" id="main-navigation" data-main-nav><a class="nav__link" href="index.html">Find a Table</a><a class="nav__link" href="reservations.html">My Reservations</a><a class="nav__link" href="dashboard.html">Restaurant Dashboard</a><a class="button button--secondary" href="login.html">Sign In</a><a class="button" href="sign-up.html">Sign Up</a></nav></div></header>
+  <main class="section"><div class="container container--narrow"><div class="section__header"><h1>Account Settings</h1><p>Manage profile information. Real account updates are deferred to secure backend integration.</p></div>
+    <form class="form-panel stack" method="post" action="#" data-auth-form>
+      <h2>Profile Information</h2>
+      <div class="field"><label for="account-email">Email</label><input id="account-email" name="email" type="email" value="aime@example.com" required><p class="helper">Email changes will require verified authentication later.</p></div>
+      <div class="field"><label for="account-name">Full name</label><input id="account-name" name="full_name" type="text" value="Aime Serge"></div>
+      <div class="field"><label for="account-phone">Phone number</label><input id="account-phone" name="phone" type="tel" value="+250 788 000 000"></div>
+      <button class="button" type="submit">Save Changes</button><p data-form-message class="helper"></p>
+    </form>
+    <aside class="card card__body mt-6"><h2>Account Details</h2><p><strong>Account type:</strong> Diner</p><p><strong>Member since:</strong> July 2026</p><a class="button button--secondary" href="index.html">Sign out placeholder</a></aside>
+  </div></main>
+  <footer class="site-footer"><div class="container site-footer__inner"><a class="brand" href="index.html"><span class="brand__mark">TB</span><span class="brand__name">TableBook</span></a><p>&copy; 2026 TableBook.</p></div></footer><script type="module" src="js/app.js"></script>
+</body>
+</html>
