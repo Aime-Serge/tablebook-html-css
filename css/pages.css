@@ -1,0 +1,111 @@
+.hero {
+  background:
+    linear-gradient(rgba(43, 33, 27, 0.35), rgba(43, 33, 27, 0.35)),
+    url("../assets/images/restaurant-1.jpg") center / cover;
+  min-height: 78vh;
+  padding: var(--space-16) 0 var(--space-12);
+}
+
+.hero__content {
+  color: #fff;
+  max-width: 860px;
+  padding-top: var(--space-8);
+}
+
+.hero h1,
+.hero p {
+  color: #fff;
+}
+
+.hero__copy {
+  font-size: 1.15rem;
+  margin: var(--space-5) 0 var(--space-8);
+  max-width: 680px;
+}
+
+.trust-strip {
+  align-items: center;
+  background: rgba(255, 248, 239, 0.92);
+  border: 1px solid rgba(234, 217, 198, 0.7);
+  border-radius: var(--radius-lg);
+  color: var(--color-text);
+  display: inline-flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  padding: var(--space-2) var(--space-3);
+}
+
+.feature {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.feature__icon {
+  align-items: center;
+  background: var(--color-primary-light);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  display: inline-flex;
+  flex: 0 0 2.7rem;
+  height: 2.7rem;
+  justify-content: center;
+}
+
+.page-hero {
+  background: var(--color-surface-warm);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-10) 0;
+}
+
+.compact-search {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-4) 0;
+}
+
+.detail-hero {
+  aspect-ratio: 16 / 7;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  width: 100%;
+}
+
+.booking-widget {
+  position: sticky;
+  top: 6rem;
+}
+
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.reservation-card {
+  padding: var(--space-5);
+}
+
+.reservation-card__top {
+  align-items: flex-start;
+  display: flex;
+  gap: var(--space-4);
+  justify-content: space-between;
+}
+
+.auth-shell {
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+  padding: var(--space-8) var(--space-5);
+}
+
+.auth-card {
+  margin: 0 auto;
+  max-width: 460px;
+  width: 100%;
+}
+
+.muted-list {
+  color: var(--color-muted);
+  padding-left: var(--space-5);
+}
