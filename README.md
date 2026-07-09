@@ -6,14 +6,6 @@ TableBook is a University of Rwanda Year 1 Web Design project transformed from a
 
 The project demonstrates how a restaurant reservation platform can be represented with semantic HTML, external CSS, accessible forms, responsive layouts, and light JavaScript without relying on Next.js, React, Tailwind, TypeScript, Supabase, Radix UI, or any external framework.
 
-## Original Project Summary
-
-The source project was a v0/Next.js app with Supabase integration. It included restaurant search, restaurant detail pages, a booking widget, login and sign-up flows, diner reservations, account settings, and a restaurant owner dashboard.
-
-## Why It Was Transformed
-
-The transformation keeps the same business purpose and user flows while matching a Web Design course scope. Backend logic, authentication, database persistence, and framework components are intentionally deferred so the submitted version focuses on HTML structure, CSS design, forms, links, tables, responsive design, and maintainable file organization.
-
 ## Curriculum Concepts Demonstrated
 
 - Complete HTML5 page structure with `html`, `head`, `title`, and `body`
