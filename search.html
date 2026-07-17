@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Search Restaurants | TableBook</title>
-  <link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/responsive.css">
+  <title>Search Restaurants | TableBook</title>  <!-- Technologies: HTML5, CSS3, Responsive layout, Vanilla JS modules -->
+  <link rel="icon" href="assets/images/logo.jpg">  <link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-  <header class="site-header"><div class="container site-header__inner"><a class="brand" href="index.html"><span class="brand__mark">TB</span><span class="brand__name">TableBook</span></a><button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="main-navigation">Menu</button><nav class="nav" id="main-navigation" data-main-nav><a class="nav__link" href="index.html">Find a Table</a><a class="nav__link" href="reservations.html">My Reservations</a><a class="nav__link" href="dashboard.html">Restaurant Dashboard</a><a class="button button--secondary" href="login.html">Sign In</a><a class="button" href="sign-up.html">Sign Up</a></nav></div></header>
+  <header class="site-header"><div class="container site-header__inner"><a class="brand" href="index.html" aria-label="TableBook home"><img class="brand__logo" src="assets/images/logo.jpg" alt="TableBook logo" width="48" height="48"><span class="brand__name">TableBook</span></a><button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="main-navigation" aria-label="Toggle navigation"></button><nav class="nav" id="main-navigation" data-main-nav><a class="nav__link" href="index.html">Table-In</a><a class="nav__link" href="reservations.html">Reservations</a><a class="nav__link" href="dashboard.html">Dashboard</a><a class="button button--secondary" href="login.html">Login</a><a class="button" href="sign-up.html">Register</a></nav></div></header>
   <main>
     <section class="compact-search">
       <div class="container">
@@ -45,7 +45,31 @@
       </div>
     </section>
   </main>
-  <footer class="site-footer"><div class="container site-footer__inner"><a class="brand" href="index.html"><span class="brand__mark">TB</span><span class="brand__name">TableBook</span></a><p>&copy; 2026 TableBook.</p></div></footer>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="footer-branding">
+        <a class="footer-brand" href="index.html" aria-label="TableBook home">
+          <img class="brand__logo" src="assets/images/logo.jpg" alt="TableBook logo" width="40" height="40">
+          <span class="brand__name">TableBook</span>
+        </a>
+        <p class="footer-copy">Find the best local restaurants, filter by cuisine and timing, and reserve your table with confidence.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick links</h3>
+        <a href="index.html">Home</a>
+        <a href="search.html">Search</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Login</a>
+      </div>
+      <div class="footer-meta">
+        <h3>Contact</h3>
+        <p>support@tablebook.example</p>
+        <p>+250 788 000 000</p>
+        <p>Kigali, Rwanda</p>
+      </div>
+    </div>
+  </footer>
   <script type="module" src="js/app.js"></script>
 </body>
 </html>

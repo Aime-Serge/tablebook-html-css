@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Create Account | TableBook</title>
+  <!-- Technologies: HTML5, CSS3, Responsive layout, Vanilla JS modules -->
+  <link rel="icon" href="assets/images/logo.jpg">
   <link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
   <main class="auth-shell">
     <section class="auth-card stack">
-      <a class="brand" href="index.html"><span class="brand__mark">TB</span><span class="brand__name">TableBook</span></a>
+      <a class="brand" href="index.html" aria-label="TableBook home"><img class="brand__logo" src="assets/images/logo.jpg" alt="TableBook logo" width="48" height="48"><span class="brand__name">TableBook</span></a>
       <form class="form-panel stack" method="post" action="sign-up-success.html" data-auth-form data-success-redirect="sign-up-success.html">
         <div><h1>Create your account</h1><p>Choose whether you are booking tables or managing a restaurant.</p></div>
         <div class="field"><label for="signup-name">Full name</label><input id="signup-name" name="full_name" type="text" placeholder="John Doe" required></div>
@@ -15,10 +17,41 @@
         <div class="field"><label for="signup-password">Password</label><input id="signup-password" name="password" type="password" placeholder="Minimum 6 characters" minlength="6" required></div>
         <fieldset class="stack"><legend class="label">I am a...</legend><label class="radio-card"><input type="radio" name="role" value="diner" checked> <span><strong>Diner</strong><br><span class="helper">I want to discover and book restaurants.</span></span></label><label class="radio-card"><input type="radio" name="role" value="owner"> <span><strong>Restaurant owner</strong><br><span class="helper">I want to list my restaurant and manage bookings.</span></span></label></fieldset>
         <button class="button" type="submit">Create Account</button><p data-form-message class="helper"></p>
-        <p>Already have an account? <a href="login.html">Sign in</a></p>
+        <p>Already have an account? <a href="login.html">Login</a></p>
       </form>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="footer-branding">
+        <a class="footer-brand" href="index.html" aria-label="TableBook home">
+          <img class="brand__logo" src="assets/images/logo.jpg" alt="TableBook logo" width="40" height="40">
+          <span class="brand__name">TableBook</span>
+        </a>
+        <p class="footer-copy">TableBook connects diners to great restaurants, simplifies reservations, and supports local dining discovery through a clean, accessible web experience.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick links</h3>
+        <a href="index.html">Home</a>
+        <a href="search.html">Search</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Login</a>
+      </div>
+      <div class="footer-meta">
+        <h3>Contact</h3>
+        <p>support@tablebook.example</p>
+        <p>+250 788 000 000</p>
+        <p>Kigali, Rwanda</p>
+        <div class="footer-social" aria-label="Follow TableBook on social media">
+          <a href="https://www.instagram.com/_aime_serge/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.linkedin.com/in/aimesergeukobizaba/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://x.com/aime__serge" target="_blank" rel="noopener noreferrer">X</a>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script type="module" src="js/app.js"></script>
 </body>
 </html>

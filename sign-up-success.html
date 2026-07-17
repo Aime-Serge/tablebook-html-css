@@ -2,18 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Check Your Email | TableBook</title>
+  <!-- Technologies: HTML5, CSS3, Responsive layout, Vanilla JS modules -->
+  <link rel="icon" href="assets/images/logo.jpg">
   <link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
   <main class="auth-shell">
     <section class="auth-card form-panel stack">
-      <a class="brand" href="index.html"><span class="brand__mark">TB</span><span class="brand__name">TableBook</span></a>
+      <a class="brand" href="index.html" aria-label="TableBook home"><img class="brand__logo" src="assets/images/logo.jpg" alt="TableBook logo" width="48" height="48"><span class="brand__name">TableBook</span></a>
       <h1>Check your email</h1>
       <p>A confirmation step is represented here to match the original flow. In the backend phase, this page will respond to real email verification.</p>
       <ol class="muted-list"><li>Verify your email address.</li><li>Return to TableBook and sign in.</li><li>Start booking or create your restaurant profile.</li></ol>
       <a class="button" href="login.html">Back to Sign In</a>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="footer-branding">
+        <a class="footer-brand" href="index.html" aria-label="TableBook home">
+          <img class="brand__logo" src="assets/images/logo.jpg" alt="TableBook logo" width="40" height="40">
+          <span class="brand__name">TableBook</span>
+        </a>
+        <p class="footer-copy">TableBook connects diners to great restaurants, simplifies reservations, and supports local dining discovery through a clean, accessible web experience.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick links</h3>
+        <a href="index.html">Home</a>
+        <a href="search.html">Search</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Login</a>
+      </div>
+      <div class="footer-meta">
+        <h3>Contact</h3>
+        <p>support@tablebook.example</p>
+        <p>+250 788 000 000</p>
+        <p>Kigali, Rwanda</p>
+        <div class="footer-social" aria-label="Follow TableBook on social media">
+          <a href="https://www.instagram.com/_aime_serge/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.linkedin.com/in/aimesergeukobizaba/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://x.com/aime__serge" target="_blank" rel="noopener noreferrer">X</a>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script type="module" src="js/app.js"></script>
 </body>
 </html>
