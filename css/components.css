@@ -12,6 +12,37 @@
   transition: background var(--transition), border-color var(--transition), transform var(--transition);
 }
 
+/* Project notes: Uses CSS variables, responsive layout, and component-based styles.
+   Technologies: CSS3, variables, and simple utility classes. */
+
+/* Logo styling: make brand logo a rounded circle and constrained size. */
+.brand__logo {
+  border-radius: 9999px;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Icon helpers used for inline SVG icons in navigation */
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Utility: visually hidden content for screen readers */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  border: 0;
+  padding: 0;
+  margin: -1px;
+}
+
 .button:hover {
   background: var(--color-primary-dark);
   border-color: var(--color-primary-dark);
